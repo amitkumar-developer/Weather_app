@@ -15,6 +15,10 @@ const WeatherApp = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    if (location.trim() === '') {
+      alert('Please enter a city name');
+      return;
+    }
     getWeatherData();
   };
 
