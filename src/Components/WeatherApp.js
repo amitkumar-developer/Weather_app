@@ -29,10 +29,10 @@ const WeatherApp = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        // if (data.cod && data.cod !== 200) {
-        //   alert('Invalid location. Please enter a valid city name.');
-        //   return;
-        // }
+        if (data.cod && data.cod !== 200) {
+          alert('Invalid location. Please enter a valid city name.');
+          return;
+        }
         setWeatherData(data);
       })
     
