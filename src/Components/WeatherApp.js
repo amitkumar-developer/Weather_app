@@ -55,7 +55,7 @@ const WeatherApp = () => {
           />
           <button
             type="submit"
-            className="bg-blue-700 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600 "
+            // className="bg-blue-700 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600 "
           >
             Check Weather
           </button>
